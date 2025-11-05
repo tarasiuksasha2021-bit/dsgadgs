@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивний сайт</title>
+    <style>
+        /* Загальні стилі */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f0f4ff, #ffffff);
+            margin: 0;
+            color: #333;
+        }
+
+        /* Шапка */
+        header {
+            background-color: #4f6ef7;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0 0 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 8px 15px;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* Основний блок */
+        main {
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .card h2 {
+            color: #4f6ef7;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #4f6ef7;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #354ed4;
+            transform: scale(1.05);
+        }
+
+        /* Підвал */
+        footer {
+            background-color: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 15px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            margin-top: 40px;
+        }
+
+        /* --- Адаптивність --- */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .card {
+                padding: 20px;
+                margin: 0 10px;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Мій сайт</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Про мене</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Вітаю!</h2>
+            <p>Це приклад адаптивного сайту з сучасним дизайном. Виглядає гарно як на комп’ютері, так і на телефоні 📱💻</p>
+            <button>Дізнатись більше</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Мій сайт. Усі права захищено.</p>
+    </footer>
+</body>
+</html>
